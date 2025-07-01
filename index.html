@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beach Travel Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white scroll-smooth">
+
+<!-- Navbar -->
+<nav class="flex items-center overflow-x-auto whitespace-nowrap px-4 py-3 space-x-6 text-base sm:text-lg font-semibold sticky top-0 bg-black z-50">
+  <a href="#home" class="shrink-0">Home</a>
+  <a href="#popular" class="shrink-0">Popular</a>
+  <a href="#about" class="shrink-0">About Us</a>
+  <a href="#explore" class="shrink-0">Explore</a>
+  <a href="#contact" class="shrink-0">Contact</a>
+</nav>
+
+<!-- Home Section with Smooth Fade -->
+<section id="home" class="relative h-screen w-full overflow-hidden">
+  <div class="absolute top-0 left-0 w-full h-full">
+    <video id="videoA" autoplay muted playsinline class="w-full h-full object-cover absolute inset-0 transition-opacity duration-1000 opacity-100 z-10"></video>
+    <video id="videoB" autoplay muted playsinline class="w-full h-full object-cover absolute inset-0 transition-opacity duration-1000 opacity-0 z-0"></video>
+  </div>
+
+  <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-20">
+    <div class="bg-gradient-to-t from-black/80 to-transparent p-6 sm:p-8 md:p-10 rounded-xl max-w-3xl">
+      <h3 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white drop-shadow-md mb-3">
+        Welcome to Travel
+      </h3>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-lg mb-6">
+        Explore the Beach
+      </h1>
+      <p class="text-base sm:text-lg md:text-xl font-medium text-white leading-relaxed drop-shadow">
+        Soak in the sun, stroll golden sands, and let the waves guide your next adventure.<br>
+        Discover hidden coastal gems along the Indian shoreline.<br>
+        Unwind to the rhythm of tides and breathe in the salty breeze.<br>
+        Let your journey begin where the land kisses the sea.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Popular Beaches Section -->
+<section id="popular" class="relative py-20 bg-black text-white">
+  <h2 class="text-center text-4xl font-extrabold mb-12">Popular Beaches in India</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4">
+    <div class="beach-image">
+      <img src="images/beach1.jpg" alt="Goa Beach" />
+      <div class="overlay"><span>Goa Beach</span></div>
+    </div>
+    <div class="beach-image">
+      <img src="images/beach2.jpg" alt="Kovalam Beach" />
+      <div class="overlay"><span>Kovalam Beach</span></div>
+    </div>
+    <div class="beach-image">
+      <img src="images/beach3.jpg" alt="Andaman Beach" />
+      <div class="overlay"><span>Andaman Beach</span></div>
+    </div>
+    <div class="beach-image">
+      <img src="images/beach4.jpg" alt="Varkala Beach" />
+      <div class="overlay"><span>Varkala Beach</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about" class="bg-black text-white flex flex-col md:flex-row items-center justify-center gap-8 px-6 py-20">
+  <div class="w-full md:w-1/2">
+    <video autoplay muted loop playsinline disablePictureInPicture controlsList="nodownload nofullscreen noremoteplayback" class="w-full h-auto rounded-lg shadow-lg">
+      <source src="video9.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="w-full md:w-1/2 text-center md:text-left px-2">
+    <h2 class="text-4xl font-bold mb-4">About Us</h2>
+    <p class="text-lg leading-relaxed">
+      Welcome to our beach travel portal, your one-stop destination for discovering the most scenic beaches across India.
+      From the sun-kissed shores of Goa to the quiet serenity of Varkala, we bring you handpicked locations and travel
+      insights that inspire your next escape. Let’s make every beach visit an unforgettable adventure.
+    </p>
+  </div>
+</section>
+
+<!-- Explore Section -->
+<section id="explore" class="relative h-screen w-full overflow-hidden">
+  <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover -z-10">
+    <source src="video7.mp4" type="video/mp4">
+  </video>
+  <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-10">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6">Explore More</h1>
+    <p class="text-base sm:text-lg">Click here for more</p>
+    <a href="explore.html" class="mt-4 inline-block text-black text-xl font-medium py-3 px-6 
+            bg-white bg-opacity-50 rounded-full border-2 border-white 
+            backdrop-blur-lg hover:bg-opacity-70 hover:scale-110 
+            transition duration-300 ease-in-out animate-bounce">
+      Explore More
+    </a>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="min-h-screen bg-black text-white flex flex-col items-center justify-center px-6 py-20">
+  <h2 class="text-4xl font-bold mb-6 text-center">Contact Us</h2>
+  <p class="text-lg text-center max-w-xl mb-8">
+    Have questions or want to plan your perfect beach getaway? Reach out to us!
+  </p>
+  <div class="space-y-2 text-center mb-10">
+    <p class="text-lg"><strong>Phone:</strong> +91 9876543210</p>
+    <p class="text-lg"><strong>Email:</strong> travelindia@example.com</p>
+  </div>
+  <form class="w-full max-w-lg space-y-4">
+    <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg bg-gray-800 text-white outline-none focus:ring-2 focus:ring-blue-500" required />
+    <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg bg-gray-800 text-white outline-none focus:ring-2 focus:ring-blue-500" required />
+    <textarea placeholder="Your Message" rows="5" class="w-full p-3 rounded-lg bg-gray-800 text-white outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+    <button type="submit" class="bg-blue-600 hover:bg-blue-700 transition-colors px-6 py-3 rounded-lg text-white font-semibold">
+      Send Message
+    </button>
+  </form>
+</section>
+
+<!-- Smooth Video Switch Script -->
+<script>
+  const sources = [
+    "video1.mp4",
+    "video2.mp4",
+    "video3.mp4",
+    "video4.mp4",
+    "video5.mp4"
+  ];
+
+  const videoA = document.getElementById("videoA");
+  const videoB = document.getElementById("videoB");
+
+  let current = 0;
+  let isAplaying = true;
+
+  videoA.src = sources[current];
+  videoA.load();
+  videoA.play().catch(e => console.error("Autoplay failed for videoA", e));
+
+  function switchVideo() {
+    const next = (current + 1) % sources.length;
+    const fadeOut = isAplaying ? videoA : videoB;
+    const fadeIn = isAplaying ? videoB : videoA;
+
+    fadeIn.src = sources[next];
+    fadeIn.load();
+    fadeIn.oncanplay = () => {
+      fadeIn.play().then(() => {
+        fadeIn.classList.remove("opacity-0", "z-0");
+        fadeIn.classList.add("opacity-100", "z-10");
+
+        fadeOut.classList.remove("opacity-100", "z-10");
+        fadeOut.classList.add("opacity-0", "z-0");
+
+        isAplaying = !isAplaying;
+        current = next;
+      }).catch(e => console.error("Play failed on fadeIn", e));
+    };
+  }
+
+  setInterval(switchVideo, 10000);
+</script>
+
+</body>
+</html>
